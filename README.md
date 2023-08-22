@@ -1,0 +1,2 @@
+# TauriHelloWorld
+Example Tauri App
