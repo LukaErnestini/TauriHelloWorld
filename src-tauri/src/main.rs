@@ -8,6 +8,10 @@ fn greet(name: &str) -> String {
 }
 
 fn main() {
+    use tauri::SystemTray;
+
+    let tray = SystemTray::new();
+    
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![greet])
         .run(tauri::generate_context!())
